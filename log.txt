@@ -1,0 +1,891 @@
+Switched to context "kind-release-1-13".
+namespace/crossplane-system created
+#### install 1.7.0
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:57:02 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.7.0
+Chart Application Version: 1.7.0
+
+Kube Version: v1.27.3
+NAME      	NAMESPACE        	REVISION	UPDATED                              	STATUS  	CHART           	APP VERSION
+crossplane	crossplane-system	1       	2023-07-28 09:57:02.290887 +0200 CEST	deployed	crossplane-1.7.0	1.7.0      
+[
+  "v1alpha1"
+]
+NAME                                       READY   STATUS    RESTARTS   AGE
+crossplane-5d65f7987b-dswfd                1/1     Running   0          12s
+crossplane-rbac-manager-7c8b45c6c8-2w2rs   1/1     Running   0          12s
+composition.apiextensions.crossplane.io/ck8s created
+compositeresourcedefinition.apiextensions.crossplane.io/test.ck8s.crossplane.io created
+composition.apiextensions.crossplane.io/ck8s configured
+compositeresourcedefinition.apiextensions.crossplane.io/test.ck8s.crossplane.io configured
+composition.apiextensions.crossplane.io/ck8s configured
+compositeresourcedefinition.apiextensions.crossplane.io/test.ck8s.crossplane.io unchanged
+NAME         REVISION   CURRENT   AGE
+ck8s-h9gwk   2          False     20s
+ck8s-k62ng   1          False     29s
+ck8s-mzfsg   3          True      10s
+#### upgrade 1.8.0
+Release "crossplane" has been upgraded. Happy Helming!
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:57:58 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.9.0
+Chart Application Version: 1.9.0
+
+Kube Version: v1.27.3
+[
+  "v1alpha1"
+]
+NAME         REVISION   CURRENT   AGE
+ck8s-h9gwk   2          False     31s
+ck8s-k62ng   1          False     40s
+ck8s-mzfsg   3          True      21s
+NAME                                      READY   STATUS    RESTARTS   AGE
+crossplane-7df95d5567-7fxkr               1/1     Running   0          10s
+crossplane-rbac-manager-7d75f6594-smlgt   1/1     Running   0          10s
+#### upgrade 1.10.0
+Release "crossplane" has been upgraded. Happy Helming!
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:58:09 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 3
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.10.0
+Chart Application Version: 1.10.0
+
+Kube Version: v1.27.3
+[
+  "v1alpha1"
+]
+NAME         REVISION   CURRENT   AGE
+ck8s-h9gwk   2          False     40s
+ck8s-k62ng   1          False     49s
+ck8s-mzfsg   3          True      30s
+NAME                                       READY   STATUS        RESTARTS   AGE
+crossplane-7df95d5567-7fxkr                0/1     Terminating   0          19s
+crossplane-8d59577cb-wkk96                 1/1     Running       0          8s
+crossplane-rbac-manager-6b7b88c5c4-kww4l   1/1     Running       0          8s
+#### upgrade 1.11.0
+Release "crossplane" has been upgraded. Happy Helming!
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:58:18 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 4
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.11.0
+Chart Application Version: 1.11.0
+
+Kube Version: v1.27.3
+[
+  "v1alpha1",
+  "v1beta1"
+]
+NAME         REVISION   AGE
+ck8s-h9gwk   2          52s
+ck8s-k62ng   1          61s
+ck8s-mzfsg   3          42s
+NAME                                       READY   STATUS    RESTARTS   AGE
+crossplane-6d679d88f4-v98gk                1/1     Running   0          11s
+crossplane-rbac-manager-6dc8454bcc-89tfh   1/1     Running   0          11s
+#### upgrade 1.12.0
+Release "crossplane" has been upgraded. Happy Helming!
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:58:29 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 5
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.12.0
+Chart Application Version: 1.12.0
+
+Kube Version: v1.27.3
+[
+  "v1alpha1",
+  "v1beta1",
+  "v1"
+]
+NAME         REVISION   XR-KIND   XR-APIVERSION                 AGE
+ck8s-h9gwk   2          test      ck8s.crossplane.io/v1alpha1   63s
+ck8s-k62ng   1          test      ck8s.crossplane.io/v1alpha1   72s
+ck8s-mzfsg   3          test      ck8s.crossplane.io/v1alpha1   53s
+NAME                                     READY   STATUS        RESTARTS   AGE
+crossplane-6d679d88f4-v98gk              0/1     Terminating   0          22s
+crossplane-75d8695f98-hkdxp              1/1     Running       0          10s
+crossplane-rbac-manager-6588fb79-7skj6   1/1     Running       0          10s
+#### upgrade 1.13.0
+Release "crossplane" has been upgraded. Happy Helming!
+NAME: crossplane
+LAST DEPLOYED: Fri Jul 28 09:58:40 2023
+NAMESPACE: crossplane-system
+STATUS: deployed
+REVISION: 6
+TEST SUITE: None
+NOTES:
+Release: crossplane
+
+Chart Name: crossplane
+Chart Description: Crossplane is an open source Kubernetes add-on that enables platform teams to assemble infrastructure from multiple vendors, and expose higher level self-service APIs for application teams to consume.
+Chart Version: 1.13.0
+Chart Application Version: 1.13.0
+
+Kube Version: v1.27.3
+[
+  "v1alpha1",
+  "v1beta1",
+  "v1"
+]
+NAME         REVISION   XR-KIND   XR-APIVERSION                 AGE
+ck8s-h9gwk   2          test      ck8s.crossplane.io/v1alpha1   64s
+ck8s-k62ng   1          test      ck8s.crossplane.io/v1alpha1   73s
+ck8s-mzfsg   3          test      ck8s.crossplane.io/v1alpha1   54s
+NAME                                       READY   STATUS     RESTARTS   AGE
+crossplane-75d8695f98-hkdxp                1/1     Running    0          11s
+crossplane-798547c55c-8x84r                0/1     Init:0/1   0          0s
+crossplane-rbac-manager-649488698b-cljcv   0/1     Init:0/1   0          0s
+crossplane-rbac-manager-6588fb79-7skj6     1/1     Running    0          11s
+{"level":"info","ts":"2023-07-28T07:58:48Z","logger":"crossplane","msg":"Given tls secret is already filled, skipping tls certificate generation","Step":"WebhookCertificateGenerator"}
+{"level":"info","ts":"2023-07-28T07:58:48Z","logger":"crossplane","msg":"Step has been completed","Name":"WebhookCertificateGenerator"}
+crossplane: error: core.initCommand.Run(): cannot initialize core: cannot apply crd: cannot patch object: CustomResourceDefinition.apiextensions.k8s.io "compositionrevisions.apiextensions.crossplane.io" is invalid: status.storedVersions[0]: Invalid value: "v1alpha1": must appear in spec.versions
+### reproduced #4400
+### debug output
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: "2023-07-28T07:58:30Z"
+    generateName: crossplane-75d8695f98-
+    labels:
+      app: crossplane
+      app.kubernetes.io/component: cloud-infrastructure-controller
+      app.kubernetes.io/instance: crossplane
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: crossplane
+      app.kubernetes.io/part-of: crossplane
+      app.kubernetes.io/version: 1.12.0
+      helm.sh/chart: crossplane-1.12.0
+      pod-template-hash: 75d8695f98
+      release: crossplane
+    name: crossplane-75d8695f98-hkdxp
+    namespace: crossplane-system
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: crossplane-75d8695f98
+      uid: eaa82b26-c4d1-403a-a281-1f5f7f2ad0c7
+    resourceVersion: "1286"
+    uid: 5d8d3ff5-3bab-4880-9c48-aec5ead74f45
+  spec:
+    containers:
+    - args:
+      - core
+      - start
+      - --enable-composition-revisions
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.memory
+      - name: POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: LEADER_ELECTION
+        value: "true"
+      - name: WEBHOOK_TLS_SECRET_NAME
+        value: webhook-tls-secret
+      - name: WEBHOOK_TLS_CERT_DIR
+        value: /webhook/tls
+      image: crossplane/crossplane:v1.12.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane
+      ports:
+      - containerPort: 9443
+        name: webhooks
+        protocol: TCP
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /cache
+        name: package-cache
+      - mountPath: /webhook/tls
+        name: webhook-tls-secret
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-qrkfp
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    initContainers:
+    - args:
+      - core
+      - init
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.memory
+      - name: POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: POD_SERVICE_ACCOUNT
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: spec.serviceAccountName
+      - name: WEBHOOK_TLS_SECRET_NAME
+        value: webhook-tls-secret
+      - name: WEBHOOK_SERVICE_NAME
+        value: crossplane-webhooks
+      - name: WEBHOOK_SERVICE_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: WEBHOOK_SERVICE_PORT
+        value: "9443"
+      image: crossplane/crossplane:v1.12.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane-init
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-qrkfp
+        readOnly: true
+    nodeName: release-1-13-control-plane
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: crossplane
+    serviceAccountName: crossplane
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - emptyDir:
+        sizeLimit: 20Mi
+      name: package-cache
+    - name: webhook-tls-secret
+      secret:
+        defaultMode: 420
+        secretName: webhook-tls-secret
+    - name: kube-api-access-qrkfp
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:38Z"
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:39Z"
+      status: "True"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:39Z"
+      status: "True"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:30Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: containerd://316864cd5ee16e605d45a76ec9322193eb25ccf4f1245859d0228673541a160f
+      image: docker.io/crossplane/crossplane:v1.12.0
+      imageID: docker.io/crossplane/crossplane@sha256:2f91dafc2ccef1a55488a7a5c4c0c8664b2ac0d7826080b1d3c77b034e2355bc
+      lastState: {}
+      name: crossplane
+      ready: true
+      restartCount: 0
+      started: true
+      state:
+        running:
+          startedAt: "2023-07-28T07:58:39Z"
+    hostIP: 172.18.0.3
+    initContainerStatuses:
+    - containerID: containerd://8259e486c63306afca640886cb03d6f468d6159d603c61b859edaef6eae16e40
+      image: docker.io/crossplane/crossplane:v1.12.0
+      imageID: docker.io/crossplane/crossplane@sha256:2f91dafc2ccef1a55488a7a5c4c0c8664b2ac0d7826080b1d3c77b034e2355bc
+      lastState: {}
+      name: crossplane-init
+      ready: true
+      restartCount: 0
+      state:
+        terminated:
+          containerID: containerd://8259e486c63306afca640886cb03d6f468d6159d603c61b859edaef6eae16e40
+          exitCode: 0
+          finishedAt: "2023-07-28T07:58:37Z"
+          reason: Completed
+          startedAt: "2023-07-28T07:58:34Z"
+    phase: Running
+    podIP: 10.244.0.14
+    podIPs:
+    - ip: 10.244.0.14
+    qosClass: Burstable
+    startTime: "2023-07-28T07:58:30Z"
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: "2023-07-28T07:58:41Z"
+    generateName: crossplane-798547c55c-
+    labels:
+      app: crossplane
+      app.kubernetes.io/component: cloud-infrastructure-controller
+      app.kubernetes.io/instance: crossplane
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: crossplane
+      app.kubernetes.io/part-of: crossplane
+      app.kubernetes.io/version: 1.13.0
+      helm.sh/chart: crossplane-1.13.0
+      pod-template-hash: 798547c55c
+      release: crossplane
+    name: crossplane-798547c55c-8x84r
+    namespace: crossplane-system
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: crossplane-798547c55c
+      uid: fe766796-2814-4d42-b1c7-373de039bc0b
+    resourceVersion: "1401"
+    uid: ff1a414d-16b7-45cd-8aef-0656cde8064f
+  spec:
+    containers:
+    - args:
+      - core
+      - start
+      - --enable-composition-revisions
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.memory
+      - name: POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: POD_SERVICE_ACCOUNT
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: spec.serviceAccountName
+      - name: LEADER_ELECTION
+        value: "true"
+      - name: WEBHOOK_TLS_SECRET_NAME
+        value: webhook-tls-secret
+      - name: WEBHOOK_TLS_CERT_DIR
+        value: /webhook/tls
+      image: crossplane/crossplane:v1.13.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane
+      ports:
+      - containerPort: 9443
+        name: webhooks
+        protocol: TCP
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /cache
+        name: package-cache
+      - mountPath: /webhook/tls
+        name: webhook-tls-secret
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-ngbcz
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    initContainers:
+    - args:
+      - core
+      - init
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.memory
+      - name: POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: POD_SERVICE_ACCOUNT
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: spec.serviceAccountName
+      - name: WEBHOOK_TLS_SECRET_NAME
+        value: webhook-tls-secret
+      - name: WEBHOOK_SERVICE_NAME
+        value: crossplane-webhooks
+      - name: WEBHOOK_SERVICE_NAMESPACE
+        valueFrom:
+          fieldRef:
+            apiVersion: v1
+            fieldPath: metadata.namespace
+      - name: WEBHOOK_SERVICE_PORT
+        value: "9443"
+      image: crossplane/crossplane:v1.13.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane-init
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-ngbcz
+        readOnly: true
+    nodeName: release-1-13-control-plane
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: crossplane
+    serviceAccountName: crossplane
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - emptyDir:
+        sizeLimit: 20Mi
+      name: package-cache
+    - name: webhook-tls-secret
+      secret:
+        defaultMode: 420
+        secretName: webhook-tls-secret
+    - name: kube-api-access-ngbcz
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:41Z"
+      message: 'containers with incomplete status: [crossplane-init]'
+      reason: ContainersNotInitialized
+      status: "False"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:41Z"
+      message: 'containers with unready status: [crossplane]'
+      reason: ContainersNotReady
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:41Z"
+      message: 'containers with unready status: [crossplane]'
+      reason: ContainersNotReady
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:41Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - image: crossplane/crossplane:v1.13.0
+      imageID: ""
+      lastState: {}
+      name: crossplane
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        waiting:
+          reason: PodInitializing
+    hostIP: 172.18.0.3
+    initContainerStatuses:
+    - containerID: containerd://a8e9dd914a086c29eb21b8ff4bf7fdd64a4601fe97ef5e4621cd38781df313c2
+      image: docker.io/crossplane/crossplane:v1.13.0
+      imageID: docker.io/crossplane/crossplane@sha256:a87406d9b0d4096f8e96374a1a225007902e3283c901219cee8eb4250105252a
+      lastState:
+        terminated:
+          containerID: containerd://d0cf9705775de75d40d17318531ae63ee1e93408eae14ee2539a6191b2701262
+          exitCode: 1
+          finishedAt: "2023-07-28T07:58:46Z"
+          reason: Error
+          startedAt: "2023-07-28T07:58:45Z"
+      name: crossplane-init
+      ready: false
+      restartCount: 1
+      state:
+        terminated:
+          containerID: containerd://a8e9dd914a086c29eb21b8ff4bf7fdd64a4601fe97ef5e4621cd38781df313c2
+          exitCode: 1
+          finishedAt: "2023-07-28T07:58:49Z"
+          reason: Error
+          startedAt: "2023-07-28T07:58:48Z"
+    phase: Pending
+    podIP: 10.244.0.15
+    podIPs:
+    - ip: 10.244.0.15
+    qosClass: Burstable
+    startTime: "2023-07-28T07:58:41Z"
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    creationTimestamp: "2023-07-28T07:58:41Z"
+    generateName: crossplane-rbac-manager-649488698b-
+    labels:
+      app: crossplane-rbac-manager
+      app.kubernetes.io/component: cloud-infrastructure-controller
+      app.kubernetes.io/instance: crossplane
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: crossplane
+      app.kubernetes.io/part-of: crossplane
+      app.kubernetes.io/version: 1.13.0
+      helm.sh/chart: crossplane-1.13.0
+      pod-template-hash: 649488698b
+      release: crossplane
+    name: crossplane-rbac-manager-649488698b-cljcv
+    namespace: crossplane-system
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: ReplicaSet
+      name: crossplane-rbac-manager-649488698b
+      uid: 00ab1427-f6d6-4bde-9c75-e0632f28c9e4
+    resourceVersion: "1399"
+    uid: d9f2102e-1b8d-47b2-bac0-9a44f1425878
+  spec:
+    containers:
+    - args:
+      - rbac
+      - start
+      - --manage=Basic
+      - --provider-clusterrole=crossplane:allowed-provider-permissions
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane
+            divisor: "0"
+            resource: limits.memory
+      - name: LEADER_ELECTION
+        value: "true"
+      image: crossplane/crossplane:v1.13.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-swjkd
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    initContainers:
+    - args:
+      - rbac
+      - init
+      env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            containerName: crossplane-init
+            divisor: "0"
+            resource: limits.memory
+      image: crossplane/crossplane:v1.13.0
+      imagePullPolicy: IfNotPresent
+      name: crossplane-init
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+      securityContext:
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        runAsGroup: 65532
+        runAsUser: 65532
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-swjkd
+        readOnly: true
+    nodeName: release-1-13-control-plane
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Always
+    schedulerName: default-scheduler
+    securityContext: {}
+    serviceAccount: rbac-manager
+    serviceAccountName: rbac-manager
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: kube-api-access-swjkd
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:48Z"
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:49Z"
+      status: "True"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:49Z"
+      status: "True"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-07-28T07:58:41Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: containerd://68f8bad89212374d68ed83f56d0e69a9a75ab6605e4890698497d55438a9cae4
+      image: docker.io/crossplane/crossplane:v1.13.0
+      imageID: docker.io/crossplane/crossplane@sha256:a87406d9b0d4096f8e96374a1a225007902e3283c901219cee8eb4250105252a
+      lastState: {}
+      name: crossplane
+      ready: true
+      restartCount: 0
+      started: true
+      state:
+        running:
+          startedAt: "2023-07-28T07:58:49Z"
+    hostIP: 172.18.0.3
+    initContainerStatuses:
+    - containerID: containerd://f58b36a8c74291c08dd3efe96452f72cab3eda258878d5124725710462b273da
+      image: docker.io/crossplane/crossplane:v1.13.0
+      imageID: docker.io/crossplane/crossplane@sha256:a87406d9b0d4096f8e96374a1a225007902e3283c901219cee8eb4250105252a
+      lastState: {}
+      name: crossplane-init
+      ready: true
+      restartCount: 0
+      state:
+        terminated:
+          containerID: containerd://f58b36a8c74291c08dd3efe96452f72cab3eda258878d5124725710462b273da
+          exitCode: 0
+          finishedAt: "2023-07-28T07:58:47Z"
+          reason: Completed
+          startedAt: "2023-07-28T07:58:46Z"
+    phase: Running
+    podIP: 10.244.0.16
+    podIPs:
+    - ip: 10.244.0.16
+    qosClass: Burstable
+    startTime: "2023-07-28T07:58:41Z"
+kind: List
+metadata:
+  resourceVersion: ""

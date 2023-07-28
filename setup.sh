@@ -22,6 +22,12 @@ sleep 10
 
 kubectl get compositionrevision
 
+echo "#### upgrade 1.8.0"
+helm upgrade crossplane --namespace crossplane-system crossplane-stable/crossplane --version 1.8.0 --wait
+kubectl get crd compositionrevisions.apiextensions.crossplane.io -o json | jq '.status.storedVersions'
+kubectl get compositionrevision
+kubectl get pods -n crossplane-system
+
 echo "#### upgrade 1.9.0"
 helm upgrade crossplane --namespace crossplane-system crossplane-stable/crossplane --version 1.9.0 --wait
 kubectl get crd compositionrevisions.apiextensions.crossplane.io -o json | jq '.status.storedVersions'

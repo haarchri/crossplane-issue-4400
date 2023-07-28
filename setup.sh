@@ -64,4 +64,5 @@ echo "### reproduced #4400"
 
 echo "### debug output"
 kubectl get pods -n crossplane-system -o yaml
-kubectl get kubectl get crd compositionrevisions.apiextensions.crossplane.io -o yaml
+
+kubectl get crd compositionrevisions.apiextensions.crossplane.io -o yaml
